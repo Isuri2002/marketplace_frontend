@@ -31,7 +31,7 @@
         >
           <div class="relative h-48">
             <img 
-              :src="post.image || '/api/placeholder/400/300'"
+              :src="post.image || '/demo/images/portfolio-1.svg'"
               :alt="post.title"
               class="w-full h-full object-cover"
             />
@@ -97,7 +97,7 @@ const mockBlogPosts = [
     title: 'GENKI Moonbase: We tested this lunar-inspired strip—here\'s what we think.',
     excerpt: 'Discover our complete review of this innovative rental solution that\'s taking the market by storm. We spent weeks testing this product to bring you honest insights.',
     category: 'GEAR REVIEW',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-1.svg',
     slug: 'genki-moonbase-review',
     publishedAt: '2026-02-08'
   },
@@ -106,7 +106,7 @@ const mockBlogPosts = [
     title: 'Hugge Snowball: Keep your cats hydrated and happy. Pet fountain review.',
     excerpt: 'Essential pet care rental equipment review. Find out if this automated pet fountain is worth adding to your rental inventory.',
     category: 'PET CARE',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-2.svg',
     slug: 'hugge-snowball-review',
     publishedAt: '2026-02-07'
   },
@@ -115,7 +115,7 @@ const mockBlogPosts = [
     title: 'Finder TW2: See the stars differently. Telescope review.',
     excerpt: 'Professional telescope rental analysis. Perfect for those looking to explore astronomy equipment rentals.',
     category: 'ASTRONOMY',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-3.svg',
     slug: 'finder-tw2-review',
     publishedAt: '2026-02-06'
   },
@@ -124,7 +124,7 @@ const mockBlogPosts = [
     title: 'Kneeflow: Unboxing quick relief for knee pain.',
     excerpt: 'Health equipment rental review. Comprehensive analysis of this therapeutic knee support system.',
     category: 'HEALTH',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-1.svg',
     slug: 'kneeflow-review',
     publishedAt: '2026-02-05'
   },
@@ -133,7 +133,7 @@ const mockBlogPosts = [
     title: '10 Essential Tips for First-Time Renters',
     excerpt: 'New to renting equipment? Here are the top 10 things you need to know before making your first rental.',
     category: 'TIPS & GUIDES',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-2.svg',
     slug: 'first-time-renter-tips',
     publishedAt: '2026-02-04'
   },
@@ -142,7 +142,7 @@ const mockBlogPosts = [
     title: 'The Ultimate Guide to Camera Equipment Rentals',
     excerpt: 'Everything you need to know about renting professional photography and videography equipment.',
     category: 'PHOTOGRAPHY',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-3.svg',
     slug: 'camera-equipment-rental-guide',
     publishedAt: '2026-02-03'
   }

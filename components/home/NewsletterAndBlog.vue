@@ -9,6 +9,8 @@
       
       <div class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
         <input
+          id="newsletter-email"
+          name="newsletterEmail"
           v-model="email"
           type="email"
           placeholder="Your email address"
@@ -48,7 +50,7 @@
               <div class="bg-white rounded-lg overflow-hidden shadow-lg h-full">
                 <div class="relative h-64 md:h-80">
                   <img 
-                    :src="blogPosts[0].image || '/api/placeholder/400/300'"
+                    :src="blogPosts[0].image || '/demo/images/portfolio-1.svg'"
                     :alt="blogPosts[0].title"
                     class="w-full h-full object-cover"
                   />
@@ -81,7 +83,7 @@
               >
                 <div class="w-24 h-24 flex-shrink-0">
                   <img 
-                    :src="post.image || '/api/placeholder/150/150'"
+                    :src="post.image || '/demo/images/portfolio-2.svg'"
                     :alt="post.title"
                     class="w-full h-full object-cover"
                   />
@@ -137,7 +139,7 @@ const mockBlogPosts = [
     title: 'GENKI Moonbase: We tested this lunar-inspired strip—here\'s what we think.',
     excerpt: 'Discover our complete review of this innovative rental solution that\'s taking the market by storm.',
     category: 'GEAR REVIEW',
-    image: '/api/placeholder/400/300',
+    image: '/demo/images/portfolio-1.svg',
     slug: 'genki-moonbase-review'
   },
   {
@@ -145,7 +147,7 @@ const mockBlogPosts = [
     title: 'Hugge Snowball: Keep your cats hydrated and happy. Pet fountain review.',
     excerpt: 'Essential pet care rental equipment review.',
     category: 'PET CARE',
-    image: '/api/placeholder/150/150',
+    image: '/demo/images/portfolio-2.svg',
     slug: 'hugge-snowball-review'
   },
   {
@@ -153,7 +155,7 @@ const mockBlogPosts = [
     title: 'Finder TW2: See the stars differently. Telescope review.',
     excerpt: 'Professional telescope rental analysis.',
     category: 'ASTRONOMY',
-    image: '/api/placeholder/150/150',
+    image: '/demo/images/portfolio-3.svg',
     slug: 'finder-tw2-review'
   },
   {
@@ -161,7 +163,7 @@ const mockBlogPosts = [
     title: 'Kneeflow: Unboxing quick relief for knee pain.',
     excerpt: 'Health equipment rental review.',
     category: 'HEALTH',
-    image: '/api/placeholder/150/150',
+    image: '/demo/images/portfolio-1.svg',
     slug: 'kneeflow-review'
   },
 ];
