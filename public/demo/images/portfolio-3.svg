@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Portfolio placeholder 3">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g3)"/>
+  <path d="M0 560c180-130 390-130 640 0s460 130 640 0v160H0z" fill="#ffffff1a"/>
+  <text x="640" y="360" text-anchor="middle" fill="#fff7ed" font-family="Arial, sans-serif" font-size="52">Work Preview</text>
+</svg>

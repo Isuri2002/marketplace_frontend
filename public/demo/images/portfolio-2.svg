@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="Portfolio placeholder 2">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g2)"/>
+  <rect x="160" y="130" width="960" height="460" rx="28" fill="#ffffff1f"/>
+  <circle cx="1060" cy="200" r="70" fill="#ffffff22"/>
+  <text x="640" y="380" text-anchor="middle" fill="#ecfeff" font-family="Arial, sans-serif" font-size="52">Case Study</text>
+</svg>
