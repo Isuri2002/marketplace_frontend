@@ -1,11 +1,15 @@
 import axios from "axios";
-import { API_BASE_URL } from "@/utils/constants/api";
 import { useAuthStore } from "@/store/index";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const authStore = useAuthStore();
+  const runtimeConfig = useRuntimeConfig();
+  const baseURL = String(runtimeConfig.public.apiBaseUrl || "").replace(
+    /\/$/,
+    "",
+  );
   const apiClient = axios.create({
-    baseURL: API_BASE_URL,
+    baseURL,
   });
 
   apiClient.interceptors.request.use(

@@ -1,6 +1,6 @@
 import { useNuxtApp } from "#app";
 import { useAuthStore } from "@/store/index";
-import { API_BASE_URL, API_ENDPOINTS } from "@/utils/constants/api";
+import { API_ENDPOINTS } from "@/utils/constants/api";
 
 let refreshInFlight = null;
 
@@ -13,12 +13,9 @@ const refreshAccessTokenSingleFlight = async () => {
     const { $axios } = useNuxtApp();
     const authStore = useAuthStore();
 
-    const response = await $axios.post(
-      `${API_BASE_URL}${API_ENDPOINTS.AUTH.REFRESH_TOKEN.url}`,
-      {
-        refreshToken: authStore.refreshToken,
-      },
-    );
+    const response = await $axios.post(API_ENDPOINTS.AUTH.REFRESH_TOKEN.url, {
+      refreshToken: authStore.refreshToken,
+    });
 
     authStore.setTokens(
       response.data.access.token,

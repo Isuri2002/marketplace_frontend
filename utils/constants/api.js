@@ -1,4 +1,7 @@
-const envApiBaseUrl = import.meta.env.NUXT_PUBLIC_API_BASE_URL;
+const envApiBaseUrl =
+  import.meta.env.NUXT_PUBLIC_API_BASE_URL ||
+  process.env.NUXT_PUBLIC_API_BASE_URL ||
+  "";
 const devFallbackApiBaseUrl = import.meta.env.DEV
   ? "http://localhost:4000/v1"
   : "";
